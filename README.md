@@ -1,100 +1,98 @@
 Sanquility [All-Users-Rectify-Actions]
 ==============================
 
-#Introduction
+Greetings; and welcome to the official GitHub Repository of Sanquility.
 
-Aura is completely free and licensed under the GNU GPL.
-As such, every user is free to use Aura and choose how to use it,
-in the context of its license.
+Sanquility is a relative to a once upon a time project who has wondered
+and gotten lost along the beaten path. In hopes of accomplishing what
+her older sister couldn't do; she set out on a venture of her own and
+with our help; she will accomplish her goal that her sister once had.
+
+Now; we will be straight-foward with you. While we have no intention on
+releasing the Source-Code every single time we create a patch or an update;
+we will release it on intervals of every two weeks-one month possibly.
+
+*NOTE: IT IS ALSO POSSIBLE THAT WE MAY HALT PUBLIC DEVELOPMENT AT ANY GIVEN
+TIME, BE IT FOR LEGAL ISSUES, OR PERSONAL ISSUES.*
+
+*NOTE: Sanquility has the intentions of turning into it's own server at some
+point; we will release early stages of the Framework, the Network Handler,
+the Core-Engine, possibly some Developer-Tools to help people un-familiar
+with Programming assist them in developing their own Sanquility, however at
+the same time; when time comes for us we will do an official opening and may
+halt on releasing any further source-code unless deemed necessary.*
+
 
 Compatibility
 ------------------------------
-Aura is only compatible to the latest version of NA,
-compatibility to all other versions was dropped on
-2013-09-13 (in Aura Legacy).
+Sanquility is compatible with the Client that we provide; where most key
+elements are programmed from scratch. It took us a very, very long while
+to remove many, many referances, but, it's done. Please; use the Client
+we provide to ensure your security and game-play is par-to-none.
 
-Requirements
+Recommendations/Requirements
 ------------------------------
-To *run* Aura, you need
-* .NET 4.5 (Mono 3.2.7 or above)
-* MySQL 5 compatible database
+In order to begin using Sanquility; you will have to compile the 
+Source-Code yourself using an IDE.
 
-To *compile* Aura, you need
-* C# 5 compiler, such as:
-  * [Visual Studio](http://www.visualstudio.com/en-us/products/visual-studio-express-vs.aspx) (2012 or later)
-  * [Monodevelop](http://monodevelop.com/) (With Mono version 3.2.7 or greater)
-  * [SharpDevelop](http://www.icsharpcode.net/OpenSource/SD/) (Version 4.4 or greater)
+The recommended/required stuff you will need will be listed below.
+
+  -> Visual Studios 2017, can be free or paid. You just need the compiler
+  -> .NET 4.5
+  -> MySQL 5
+  
+Please note: There are many other programs or frameworks similar to the above
+mentioned that you could use; however; if you do not know what you're doing and
+want a set-up with a very low ratio of any errors occuring during set-up, please
+use the recommended IDE/Frameworks.
 
 Installation
 ------------------------------
-* Compile Aura
-* Run `sql/main.sql` to setup the database
-* Copy `system/conf/database.conf` to `user/conf/`,
-  adjust the necessary values and remove the rest.
+-> Compile Sanquility.
+-> Now, head to `main/data/core/database/main.sql` and launch it in order to set-up the database.
+-> Next, copy `main/config/database/database.conf` and paste it in `usr/config/`,
+  now adjust the values currently set to your 
+  satisfaction.
 
-Afterwards, you should be able to start Aura via the provided scripts or
-directly from the bin directories. If not, or if you need a more detailed guide,
-head over to our [forums](http://aura-project.org/forum/), [Gitter chat](https://gitter.im/aura-project/aura), or [wiki](https://github.com/aura-project/aura/wiki).
+*Finally*, using the .bat file scripts; you should be able to launch Sanquility
+directly from your File Explorer where the .bat files are located in
+Sanquility's main directory as long as it's compiled.
 
-Contribution
+Alpha-Testing; STATISTICS!
 ------------------------------
-There are 4 ways **you** can help us to improve Aura:
+We are always in need of people to assist us with drastically improving Sanquility.
 
-1. Research
-2. Bug reports
-3. Pull Requests
-4. Releases on the forums
+That's right, we're talking about *you!* The information you provide and submit
+to us further enhances our output on where to look!
 
-### 1. Research
-Do research on NPCs, quests, skills, anything really that isn't implemented yet and
-post it on our [research forum](http://aura-project.org/forum/forum/36-research/).
-The information you post will help developers to implement the features. 
-You can also keep a lookout for GitHub issues where we
-[need help](https://github.com/aura-project/aura/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
-or information.
+# Bugs
 
-### 2. Bug reports
-Report bugs on [GitHub](https://github.com/aura-project/aura/issues), so they can be fixed ASAP.
+Bugs are a common part of any game that consist of many, many lines of programming.
+If you run into any bugs, please report them on our website under the 
+"Support -> Submit a bug", and we will look into it asap. If you can provide how you
+came across it exactly; and if it does indeed reproduce the bug on our end; we will
+gradually reward you in-game or out-game.
 
-### 3+4. Code
-The fastest way to get code contributions into the source is a pull request, which,
-if well written, can be merged right into *master*. To expediate this process, 
-all pull requests must comply with our coding conventions below.
+# Alpha/Beta-Testing
 
-Alternatively you can make "casual" releases on the forum, which developers might pick up
-as research or as a base to implement the features into the official source.
+We see it quite often these days where many games are released in an un-finished state,
+only to follow up with patch after patch, sometimes patches fix bugs, add new features,
+or many other fancy follow-ups, or even introduces a brand new bug. We need people to
+help us Alpha/Beta-Test everything we put out as soon as we feel like it's stagnant
+enough for a player to proceed with it.
 
-#### Coding conventions
-* Base: [MS Naming Guidelines](http://msdn.microsoft.com/en-us/library/xzf533w0%28v=vs.71%29.aspx), [MS C# Coding Conventions](http://msdn.microsoft.com/en-us/library/ff926074.aspx)
-* Exceptions:
-  * Use `_private` for private fields and `this.Foobar` for properties, public fields, and methods.
-  * Use tabs, not spaces.
-* Comment lines shouldn't exceed ~80 characters, other lines' lengths are irrevelant.
-* Excessive usage of the auto-formatting feature is encouraged. (Default VS settings)
-* Avoid overuse of regions.
+# Game-Moderators
 
-Common problems
-------------------------------
+Do you have a knack for getting along with players? Enjoy running content endlessly,
+until you truly feel like you cannot accomplish anymore? Or maybe you like enforcing
+the rules and making sure everybody is playing fair and treating eachother equal;
+either way you like it, we're always looking for *Game-Moderators* to help us in
+the moderation of Sanquility to make sure everything is running along smoothly
+with players; and the game. 
 
-### Errors after updating Aura
-Usually all errors are solveable by recompiling and deleting the cache folder.
-
-### I can't move/am naked after login
-This usually happens when the server and the client aren't compatible to
-each other. Make sure you're running the latest version of Aura and *NA*.
-
-If you did update both and are still running into problems, an official update
-probably broke compatibility. Wait a few hours for us to update Aura
-if NA was just updated or create an issue on [GitHub](https://github.com/aura-project/aura/issues).
-
-Links
-------------------------------
-* Forums: http://aura-project.org/
-* GitHub: https://github.com/aura-project
-* Gitter chat: https://gitter.im/aura-project/aura
-* Backlog: [https://github.com/aura-project/aura/issues](https://github.com/aura-project/aura/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Abacklog)
-* Wiki: https://github.com/aura-project/aura/wiki
-
-Build Status
-------------------------------
-[![Build Status](https://travis-ci.org/aura-project/aura.png?branch=master)](https://travis-ci.org/aura-project/aura)
+*Note:* *Game-Moderators will be responsible for many various tasks; and will be
+required to be online for quite an amount of substantial time. Beings this is a
+very, very work in devlopment, players may experience their characters getting
+stuck or clipped and may need a Game-Moderator to teleport them, NPC's may not
+spawn properly and you may have to spawn it in manually, you may have to make 
+decisive actions on punishments; such as banning or muting players.*
